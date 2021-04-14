@@ -1,30 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <title>My Web Page</title>
+    <title>Javascript</title>
+    <script src="Exercise2.js"></script>
 </head>
-<body>
-  <h1>My Second Website</h1>
-  <h2>My favorite fruit</h2>
-  <ol>
-    <li>apples</li>
-    <li>oranges</li>
-    <li>pineapples</li>
-  </ol>
-  <table border="5" cellpadding="20" cellspacing="5">
-   <tr>
-      <th>Month</th>
-      <th>Rent</th>
-      <th>Eating</th>
-      <th>Groceries</th>
-    </tr>
-   <tr>
-       <td>August</td>
-       <td>$1500</td>
-       <td>$150</td>
-       <td>$350</td>
-    </tr>
-  </table>
+
+<style type="text/css">
+    #puzzle{
+        background: #ffccc7;
+        color:#2f54eb;
+        height:300px;                	/* 固定高度 */
+        line-height:40px;              	/* 定义行高 */
+        width:1000px;
+        margin:0 0 2px 0;             	/* 头部区域的外边距 */
+        text-align:left;
+        margin: auto;
+        position: absolute;
+        top: 200px;
+        left: 350px;
+        text-align: center;
+        font-family: Papyrus;
+    }
+    #text{
+        font-family:"Lucida Handwriting";
+        color:#e74c3c;
+        font-size: 40px;
+        display:inline;
+    }
+</style>
+
+<body  style="background-color:#ffffb8";>
+    <div id = "puzzle">
+        <h1>There is a <div id = "text">puzzle</div> &nbsp.Let's solve it!</h1>
+        <h2>If 7158=2 4923=1 5806=4</h2>
+        <h2>then 9472=？</h2>
+        <p>Please type your answer:<input type="text" id="answer"></p>
+        <button onclick="check()">Confirm</button>
+    </div>
 </body>
+
 </html>
